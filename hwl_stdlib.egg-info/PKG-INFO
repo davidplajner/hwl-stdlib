@@ -1,6 +1,6 @@
 Metadata-Version: 2.2
 Name: hwl-stdlib
-Version: 0.0.3
+Version: 1.0.0
 Summary: A standard library used by me frequently. A gift from me, to me, by me.
 Home-page: https://github.com/davidplajner
 Author: David Plajner
@@ -109,6 +109,11 @@ Returns the number of days in a specified month of a given year.
 
 ### `get_age(birthdate: date) -> int`
 Calculates the age based on the provided birthdate.
+
+### `get_day_from_string(get_current_timestamp())`
+Returns the day of a given timestamp in the format of: 2025-04-23T14:47:45.437576+02:00
+
+This format is being returned by get_current_timestamp() so best to use it together
 
 ## Installation
 

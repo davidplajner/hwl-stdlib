@@ -218,7 +218,15 @@ def get_today_day():
     """
     Returns today's day as for example: 'Wednesday'
     """
-    return datetime.datetime.today().strftime('%A')
+    return datetime.today().strftime('%A')
+
+def get_day_from_string(date_string):
+    """
+    Takes a datetime string in the format '2025-04-23T14:47:45.437576+02:00'
+    and returns the day of the week (e.g., 'Wednesday').
+    """
+    dt = datetime.fromisoformat(date_string)
+    return dt.strftime('%A')
 
 def validate_email(email: str) -> bool:
     """
