@@ -89,6 +89,11 @@ Returns the number of days in a specified month of a given year.
 ### `get_age(birthdate: date) -> int`
 Calculates the age based on the provided birthdate.
 
+### `get_day_from_string(get_current_timestamp())`
+Returns the day of a given timestamp in the format of: 2025-04-23T14:47:45.437576+02:00
+
+This format is being returned by get_current_timestamp() so best to use it together
+
 ## Installation
 
 You can install `stdlib` directly from your local repository and import it as 'import stdlib':
